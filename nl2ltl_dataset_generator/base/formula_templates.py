@@ -1,4 +1,4 @@
-from data_model import PairTerm
+from nl2ltl_dataset_generator.base.data_model import PairTerm
 
 
 def term_formula_template(term: PairTerm) -> str:

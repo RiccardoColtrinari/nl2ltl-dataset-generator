@@ -8,9 +8,8 @@ from pathlib import Path
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from data_model import TypesDistribution, PairTypeDistribution, PairType, UnrestrictedIdentifier, RestrictedIdentifier, \
-    DatasetDistribution, DatasetType, Dataset
-from log import log_time
+from nl2ltl_dataset_generator.base.data_model import UnrestrictedIdentifier, Dataset
+from nl2ltl_dataset_generator.base.log import log_time
 
 
 def load_unrestricted_identifiers(file_path: Path) -> List[UnrestrictedIdentifier]:

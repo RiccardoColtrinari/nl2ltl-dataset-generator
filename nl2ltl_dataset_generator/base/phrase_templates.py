@@ -1,7 +1,7 @@
 import random
 from typing import List
 
-from data_model import PairTerm, Identifier, LogicalOperator
+from nl2ltl_dataset_generator.base.data_model import PairTerm, Identifier, LogicalOperator
 
 phrase_templates = {
     "absence_global": [

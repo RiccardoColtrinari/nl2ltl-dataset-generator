@@ -6,8 +6,7 @@ from typing import List, Callable
 
 import numpy as np
 
-from exceptions import InvalidDatasetType
-from log import log_time
+from nl2ltl_dataset_generator.base.log import log_time
 
 
 class DatasetType(Enum):

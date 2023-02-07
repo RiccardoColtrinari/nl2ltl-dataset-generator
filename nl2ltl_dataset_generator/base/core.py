@@ -9,10 +9,10 @@ from typing import List, Generator, Tuple, Any
 
 import numpy as np
 
-from data_model import DatasetDistribution, DatasetType, Identifier, Pair, PairTerm, LogicalOperator, PairType, \
+from nl2ltl_dataset_generator.base.data_model import DatasetDistribution, DatasetType, Identifier, Pair, PairTerm, LogicalOperator, PairType, \
     RestrictedIdentifier, Dataset
-from loader import load_unrestricted_identifiers
-from log import log_time
+from nl2ltl_dataset_generator.base.loader import load_unrestricted_identifiers
+from nl2ltl_dataset_generator.base.log import log_time
 
 
 class TermBuildingMode(Enum):
