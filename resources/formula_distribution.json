@@ -1,0 +1,20 @@
+{
+  "scopes_distribution": {
+    "Response": {
+      "After": 3,
+      "Global": 23
+    },
+    "Existence": {
+      "After": 4,
+      "Global": 5
+    },
+    "Absence": {
+      "Global": 4,
+      "After": 1
+    },
+    "Universal": {
+      "Global": 14,
+      "After": 1
+    }
+  }
+}

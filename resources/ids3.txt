@@ -1,0 +1,15 @@
+the-a; car; starts, stops, enters
+the-a; bridge; opens, closes
+the-a; sensor; retrieves data, captures data, gathers information
+the; brake; is-pressed, is-released
+the; engine; starts, stops, breaks
+the-a; semaphore; is-yellow, is-red, is-green, is-broken
+the-a; house; collapses, is-built, is-open
+the-a; table; has been-moved, is-old, is-brown
+the-an; elevator; rises, falls, is-open, is-blocked
+the; escalator; moves, is-blocked, speeds up
+the-a; motorbike; falls down, catches fire, is-driven, has-started, has-stopped
+the; bar; is-up, is-down, is-closing, has to be-repaired
+the-a; train; derails, is-crossing, stops, has-arrived, has been-launched
+the-a; manager; handles requests, collect claims
+the-a; constructor; creates instances, instantiate objects

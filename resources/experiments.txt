@@ -1,0 +1,15 @@
+SEEDS:
+	- 100 for unrestricted_train_dataset-140.csv and unrestricted_test_dataset.csv
+	- 110 per restricted_train_dataset.csv
+	- 120 per restricted_test_dataset.csv
+	- 130 for unrestricted_train_dataset-50.csv
+
+
+Arguments:
+    - {dataset_type} -s {number of samples} -i {identifiers file path (unrestricted only)} -o {dataset save path} -r {seed}
+
+    - unrestricted -s 140000 -i "./resources/ids3.txt" -o "./results/unrestricted_train_dataset-140.csv" -r 100
+    - unrestricted -s 7500 -i "./resources/ids2.txt" -o "./results/unrestricted_test_dataset.csv" -r 100
+    - restricted -s 50000 -o "./results/restricted_train_dataset.csv" -r 110
+    - restricted -s 7500 -o "./results/restricted_test_dataset.csv" -r 120
+    - unrestricted -s 50000 -i "./resources/ids3.txt" -o "./results/unrestricted_train_dataset-50.csv" -r 130

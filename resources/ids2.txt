@@ -1,0 +1,7 @@
+the-a; computer; starts, stops
+the-a; cpu; is-overheated, is-cooled down, overheats, cools down
+the-a; mouse; moves, captures input, clicks
+the; monitor; shows output, lights up
+the-a; model; is-overfitted, is-underfitted, overfits, underfits
+the-a; plane; takes off, lands
+the-a; fridge; is-empty, is-switched on, is-open
