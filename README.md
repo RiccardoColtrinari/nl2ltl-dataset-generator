@@ -41,13 +41,13 @@ For this (and other) reason the translation of such phrases is easier than the u
 The following is a restricted sentence that can be generated using this tool:
 
 ```cmd
-Whenever AirCondCtrl then the fanCtrl.
+Whenever AirCondCtrl then activateFanCtrl.
 ```
 
 which is paired to the corresponding LTL formula:
 
 ```ltl
-□ (AirCondCtrl → fanCtrl)
+□ (AirCondCtrl → activateFanCtrl)
 ```
 
 ### **Unrestricted Dataset**
