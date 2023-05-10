@@ -47,9 +47,10 @@ Whenever AirCondCtrl then activateFanCtrl.
 which is paired to the corresponding LTL formula:
 
 ```ltl
-□ (AirCondCtrl → activateFanCtrl)
+G (AirCondCtrl → activateFanCtrl)
 ```
 
+where "G" is the □ (always) LTL operator.
 ### **Unrestricted Dataset**
 
 This tool is also able to generate an unrestricted dataset, which is the one containing unrestricted pairs.
@@ -67,8 +68,39 @@ Whenever the bridge opens then the car crosses.
 which is paired to the corresponding LTL formula:
 
 ```ltl
-□ (bridge_opens → car_crosses)
+G (bridge_opens → car_crosses)
 ```
+
+where "G" is the □ (always) LTL operator.
+
+## **Installation**
+
+First make sure to have Python 3.8 installed (it may work with other versions actually).
+
+To use the tool simply clone this repository by downloading it or using the following command:
+
+```cmd
+git clone https://github.com/RiccardoColtrinari/nl2ltl-dataset-generator.git
+```
+
+Then move to the newly created directory:
+
+```cmd
+cd nl2ltl-dataset-generator
+```
+
+Finally, install the libraries declared in the [requirements.txt file](requirements.txt).
+
+If you are using pip use the following command:
+
+```cmd
+pip install -r requirements.txt
+```
+
+other package managers may require a different syntax.
+
+It is up to you whether to use a virtual environment or not (it is usually recommended).
+
 ## **Usage**
 
 To use the tool, run main.py with the following syntax:
