@@ -1,7 +1,8 @@
 # **NL2LTL Synthetic Dataset Generator**
 
-
 This project provides a generator for synthetic pairs of Linear Temporal Logic formulas and the corresponding Natural Language phrases.
+
+These can be used to train and test Language Models or other kinds of models, in order for them to perform the translation of such sentences.
 
 The tool is a command-line utility which has been developed and used for the paper "Neural Machine Translation: from Natural Language requirements to Linear Temporal Logic formulas” by Riccardo Coltrinari, Flavio Corradini, Marco Piangerelli and Barbara Re.
 
@@ -27,33 +28,12 @@ Atomic propositions may be expressed differently based on the language we are us
 An example may be the statement ```"the car is blue"``` expressed in Natural Language, which may be expressed as ```"car == blue"``` in a more formal language.
 
 In our research we call *identifiers* the atomic propositions expressed in any language, in order to simplify the notation and refer at the same time to the same element (expressed differently) in the input and the output.
-### **Restricted Dataset**
 
-This tool is able to generate a restricted dataset, which is the one containing restricted pairs.
-
-Indeed each pair will contain a sentence expressed in Natural Language and the corresponding translation as a Linear Temporal Logic formula, both having restricted identifiers.
-
-Restricted identifiers take the form of abbreviations of words or complex technical names, such as variable names, digital signal names, sensors identifiers, and so on.
-An example may be ```"nonNullAirCondCtrl"``` or ```"isOpen"```.
-Here the input language is a subset of the whole English grammar.
-For this (and other) reason the translation of such phrases is easier than the unrestricted ones.
-
-The following is a restricted sentence that can be generated using this tool:
-
-```cmd
-Whenever AirCondCtrl then activateFanCtrl.
-```
-
-which is paired to the corresponding LTL formula:
-
-```ltl
-G (AirCondCtrl → activateFanCtrl)
-```
-
-where "G" is the □ (always) LTL operator.
 ### **Unrestricted Dataset**
 
-This tool is also able to generate an unrestricted dataset, which is the one containing unrestricted pairs.
+This tool is able to generate an unrestricted dataset, which is the one containing unrestricted pairs. The following image shows an example of such dataset:
+
+![Unrestricted dataset image](./resources/images/unrestricted_dataset_sample.PNG)
 
 This means that each pair will contain a sentence expressed in Natural Language and the corresponding translation as a Linear Temporal Logic formula, both having unrestricted identifiers.
 
@@ -73,7 +53,37 @@ G (bridge_opens → car_crosses)
 
 where "G" is the □ (always) LTL operator.
 
+The goal here is to generate a phrase that is syntactically correct in all its structure, even though its meaning may not make sense.
+
 For a deeper explanation of how identifiers work and can be represented, please refer to the [README](./resources/README.md) file in the *resources* folder.
+### **Restricted Dataset**
+
+This tool is also able to generate a restricted dataset, which is the one containing restricted pairs. The following image shows an example of such dataset:
+
+![Restricted dataset image](./resources/images/restricted_dataset_sample.PNG)
+
+Indeed each pair will contain a sentence expressed in Natural Language and the corresponding translation as a Linear Temporal Logic formula, both having restricted identifiers.
+
+Restricted identifiers take the form of abbreviations of words or complex technical names, such as variable names, digital signal names, sensors identifiers, and so on.
+An example may be ```"nonNullAirCondCtrl"``` or ```"isOpen"```.
+Here the input language is a subset of the whole English grammar.
+For this (and other) reason the translation of such phrases is easier than the unrestricted ones.
+
+The following is an example of restricted sentence that can be found in real use cases:
+
+```cmd
+Whenever AirCondCtrl then activateFanCtrl.
+```
+
+which can be paired to the corresponding LTL formula:
+
+```ltl
+G (AirCondCtrl → activateFanCtrl)
+```
+
+where "G" is the □ (always) LTL operator.
+
+In order to simulate such scenarios we decided to create these identifiers as random sequences of characters.
 
 ## **Installation**
 
