@@ -73,6 +73,8 @@ G (bridge_opens → car_crosses)
 
 where "G" is the □ (always) LTL operator.
 
+For a deeper explanation of how identifiers work and can be represented, please refer to the [README](./resources/README.md) file in the *resources* folder.
+
 ## **Installation**
 
 First make sure to have Python 3.8 installed (it may work with other versions actually).
