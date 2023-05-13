@@ -112,7 +112,7 @@ while in the formula is represented as:
 
 The following image summarizes all the concepts so far.
 
-![Identifiers structure image](./images/ids_struct.pdf)
+![Identifiers structure image](./images/ids_struct.png)
 
 ### **Differentiating the outputs**
 
