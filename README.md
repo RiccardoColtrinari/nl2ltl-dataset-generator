@@ -6,6 +6,12 @@ These can be used to train and test Language Models or other kinds of models, in
 
 The tool is a command-line utility which has been developed and used for the paper "Neural Machine Translation: from Natural Language requirements to Linear Temporal Logic formulas” by Riccardo Coltrinari, Flavio Corradini, Marco Piangerelli and Barbara Re.
 
+In our paper we use the datasets generated with this tool to train and test Language Models, collecting new insights on their use for translation of such sentences.
+
+You can find our experiments here: [https://github.com/MPiangerelli/Neural-Machine-Translation](https://github.com/MPiangerelli/Neural-Machine-Translation)
+
+While you can retrieve the datasets we created here: [https://huggingface.co/datasets/cRick/NL-to-LTL-Synthetic-Dataset](https://huggingface.co/datasets/cRick/NL-to-LTL-Synthetic-Dataset)
+
 ## **Overview**
 
 The tool is able to generate synthetic datasets containing Natural Language requirements and their corresponding Linear Temporal Logic formulas.
